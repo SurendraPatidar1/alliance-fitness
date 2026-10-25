@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
-import { FaDumbbell } from 'react-icons/fa';
+import { motion } from "framer-motion";
+import { FaDumbbell } from "react-icons/fa";
 
 const PageLoader = () => {
   return (
@@ -12,7 +12,7 @@ const PageLoader = () => {
         transition={{
           duration: 2,
           repeat: Infinity,
-          ease: 'easeInOut',
+          ease: "easeInOut",
         }}
         className="w-16 h-16 rounded-full bg-lime-400/10 border-2 border-lime-400 flex items-center justify-center text-lime-400 shadow-[0_0_30px_rgba(163,230,53,0.3)] mb-6"
       >
@@ -25,13 +25,13 @@ const PageLoader = () => {
         transition={{ duration: 0.5 }}
         className="text-xl font-black uppercase tracking-widest text-white font-heading"
       >
-        APEX <span className="text-lime-400">ATHLETICS</span>
+        ALLIANCE <span className="text-lime-400">FITNESS</span>
       </motion.h3>
 
       <div className="w-48 h-1 bg-zinc-800 rounded-full mt-4 overflow-hidden relative">
         <motion.div
-          animate={{ x: ['-100%', '100%'] }}
-          transition={{ duration: 1.5, repeat: Infinity, ease: 'linear' }}
+          animate={{ x: ["-100%", "100%"] }}
+          transition={{ duration: 1.5, repeat: Infinity, ease: "linear" }}
           className="w-1/2 h-full bg-gradient-to-r from-lime-400 to-emerald-400 rounded-full"
         />
       </div>

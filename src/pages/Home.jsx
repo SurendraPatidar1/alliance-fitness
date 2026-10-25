@@ -19,7 +19,7 @@ const SectionFallback = () => (
   <div className="w-full py-24 bg-zinc-950 flex items-center justify-center">
     <div className="flex items-center gap-3">
       <div className="w-4 h-4 rounded-full bg-lime-400 animate-ping" />
-      <span className="text-xs uppercase font-bold tracking-widest text-zinc-400">Loading APEX Experience...</span>
+      <span className="text-xs uppercase font-bold tracking-widest text-zinc-400">Loading ALLIANCE Experience...</span>
     </div>
   </div>
 );
