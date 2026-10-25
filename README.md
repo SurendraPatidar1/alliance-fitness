@@ -1,4 +1,4 @@
-# APEX ATHLETICS — Ultra-Premium Gym Landing Page
+# Alliance Fitness — Ultra-Premium Gym Landing Page
 
 ![React 19](https://img.shields.io/badge/React-19.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![Vite](https://img.shields.io/badge/Vite-8.1-646CFF?style=for-the-badge&logo=vite&logoColor=white)
