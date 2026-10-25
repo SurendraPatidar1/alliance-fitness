@@ -1,0 +1,66 @@
+import { motion } from 'framer-motion';
+import { FaPlay, FaFire } from 'react-icons/fa';
+import PrimaryButton from '../Button/PrimaryButton';
+
+const HeroContent = () => {
+  return (
+    <div className="flex flex-col items-start w-full max-w-xl lg:max-w-2xl">
+      {/* Premium Badge */}
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-lime-400/10 border border-lime-400/30 text-lime-400 text-[10px] sm:text-xs font-bold uppercase tracking-wider sm:tracking-widest mb-6 backdrop-blur-md max-w-full"
+      >
+        <FaFire className="text-lime-400 animate-bounce shrink-0" />
+        <span className="truncate">Voted #1 Premium Gym Facility 2026</span>
+      </motion.div>
+
+      {/* Main Heading */}
+      <motion.h1
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, delay: 0.2 }}
+        className="text-[22px] min-[360px]:text-2xl min-[400px]:text-3xl sm:text-5xl lg:text-6xl font-black uppercase text-white leading-[1.1] tracking-tighter sm:tracking-tight max-w-full"
+      >
+        FORGE YOUR <br />
+        <span className="text-gradient inline-block">UNSTOPPABLE</span> <br />
+        LEGACY.
+      </motion.h1>
+
+      {/* Subtitle */}
+      <motion.p
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, delay: 0.4 }}
+        className="mt-5 sm:mt-6 text-zinc-300 text-xs sm:text-base font-normal leading-relaxed max-w-lg"
+      >
+        Experience expert training, personalized fitness guidance, modern workout equipment, and a motivating community built for strength, confidence, and lasting transformation.
+      </motion.p>
+
+      {/* Call to Action Group */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, delay: 0.6 }}
+        className="mt-7 sm:mt-10 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-6 w-full sm:w-auto"
+      >
+        <PrimaryButton href="#pricing" variant="lime" className="w-full sm:w-auto">
+          Start 7-Day Free Trial
+        </PrimaryButton>
+
+        <a
+          href="#programs"
+          className="inline-flex items-center justify-center gap-3 px-6 py-3.5 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-white font-bold text-xs sm:text-sm uppercase tracking-wider transition-all backdrop-blur-md group w-full sm:w-auto"
+        >
+          <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-lime-400 text-zinc-950 flex items-center justify-center transition-transform group-hover:scale-110">
+            <FaPlay className="text-[10px] sm:text-xs ml-0.5" />
+          </div>
+          <span>Explore Programs</span>
+        </a>
+      </motion.div>
+    </div>
+  );
+};
+
+export default HeroContent;
